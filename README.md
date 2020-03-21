@@ -31,4 +31,6 @@
 
 ## Refactoring
 
-- `Theater`의 `enter`매서드에서 `TicketOffice`에 접근하는 모든 코드를 `TicketSeller` 내부로 숨긴다.
+- `TicketSeller`와 `Audience`의 **캡슐화(encapsulation)** 
+- `TicketSeller`와 `Audience`의 **응집도(cohension)** 가 높아졌다 라고 말할 수 있다.
+
