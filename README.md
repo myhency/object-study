@@ -23,3 +23,12 @@
 |매표소|TicketOffice|관람객에게 티켓을 판매하고 초대장을 티켓으로 교환해 주는 곳.|
 |판매원|TicketSeller|매표소에서 초대장을 티켓으로 교환해 주거나 티켓을 판매하는 역할을 수행하는 사람.|
 |소극장|Theater|관람객이 공연을 보는 곳.|
+
+# Study
+
+`Theater`가 `Audience`와 `TicketSeller`에 관해 너무 세세한 부분까지 알지 못하도록 
+정보를 차단해야 한다. 다시 말해서 관람객과 판매원을 **자율적인 존재**로 만들면 된다.
+
+## Refactoring
+
+- `Theater`의 `enter`매서드에서 `TicketOffice`에 접근하는 모든 코드를 `TicketSeller` 내부로 숨긴다.
