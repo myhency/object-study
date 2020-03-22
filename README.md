@@ -43,6 +43,7 @@
 ### 상영(Screening)
 
 - `Screening`은 상영할 영화(`movie`), 순번(`sequence`), 상영 시작 시간(`whenScreened`)를 가진다.
+- Movies는 재목과 사영시간 기본 요금, 할인정책을 속성으로 가진다. 이 속성들의 값은 생성자를 통해 전달받는다.
 
 
 
