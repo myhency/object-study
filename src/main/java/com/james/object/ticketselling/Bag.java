@@ -1,4 +1,4 @@
-package com.james.object;
+package com.james.object.ticketselling;
 
 public class Bag {
     private Long amount;

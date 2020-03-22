@@ -1,4 +1,4 @@
-package com.james.object;
+package com.james.object.ticketselling;
 
 import java.util.ArrayList;
 import java.util.Arrays;
