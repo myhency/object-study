@@ -52,6 +52,32 @@
 
 # Study
 
-## 구현된 할인 정책과 할인 조건
+## 업캐스팅(upcasting)
 
-![할인 정책과 할인 조건](https://github.com/myhency/myImages/blob/master/Object/chapter-02-03-001.png?raw=true)
+![자식 클래스가 부모 클래스의 타입으로 변환되는 업캐스팅](https://github.com/myhency/myImages/blob/master/Object/chapter-02-04-001.png?raw=true)
+
+- 자식 클래스가 부모 클래스를 대신하는 것
+
+## 다형성
+
+- 동일한 메시지를 전송하지만 실제로 어떤 메서드가 실행될 것인지는 메시지를 수신하는 객체의 클래스가 무엇이냐에 따라 달라진다.
+
+> 컴파일 시간 의존성은 `Movie` → `DiscountPolicy`
+>
+> 실행 시간 의존성은 `Movie` → `AmountDiscountPolicy || PercentDiscountPolicy`
+
+- 동일한 메시지를 수신했을 때 객체의 타입에 따라 다르게 응답할 수 있는 능력을 의미.
+- 다형적인 협력에 참여하는 객체들은 모두 같은 메시지를 이해할 수 있어야 한다. → 인터페이스가 동일해야 한다. 
+
+### 지연 바인딩(lazy binding) 또는 동적 바인딩(dynamic binding)
+
+메시지에 응답하기 위해 실행될 메서드를 컴파일 시점이 아닌 실행 시점에 결정한다. 즉, 메시지와 메서드를 실행 시점에 바인딩한다는 것.
+
+### 인터페이스와 다형성
+
+구현은 공유할 필요가 없고 순수하게 인터페이스만 공유하고 싶을 때 사용. 
+구현에 대한 고려 없이 다형적인 협력에 참여하는 클래스들이 공유 가능한 외부 인터페이스를 정의한 것.
+
+![자바 인터페이스와 다형성](https://github.com/myhency/myImages/blob/master/Object/chapter-02-04-002.png?raw=true)
+
+
