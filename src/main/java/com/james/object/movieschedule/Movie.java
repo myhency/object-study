@@ -10,6 +10,10 @@ public class Movie {
     private Money fee;
     private DiscountPolicy disCountPolicy; //요구사항: 영화별로 하나의 할인 정책만 할당할 수 있다.
 
+    public void changeDiscountPolicy(DiscountPolicy disCountPolicy) { // 인스턴스 변수로 연결한 방법을 사용하여 실행 시점에 할인 정책을 간단하게 변경할 수 있다.
+        this.disCountPolicy = disCountPolicy;
+    }
+
     public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
